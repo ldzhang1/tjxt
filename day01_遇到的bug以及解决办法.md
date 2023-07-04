@@ -4,7 +4,7 @@
 
 *Connection reset and 'parent.relativePath' points at wrong local POM @ line 32, column 13 -> [Help 2]*
 
-![image-20230703222106584](images\image-20230703222106584.png)
+![image-20230703222106584](images/image-20230703222106584.png)
 
 #### 1. 解决办法：
 
