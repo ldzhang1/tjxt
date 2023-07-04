@@ -10,9 +10,9 @@
 
 [(67条消息) Maven install报错:Non-resolvable parent POM for..._你知道爬上树的感觉吗的博客-CSDN博客](https://blog.csdn.net/qq_40306266/article/details/115766704)
 
-![image-20230703224054275](images\\image-20230703224054275.png)
+![image-20230703224054275](images/image-20230703224054275.png)
 
-![image-20230703224221455](images\\image-20230703224221455.png)
+![image-20230703224221455](images/image-20230703224221455.png)
 
 ### 2. Maven的版本导致报错
 
