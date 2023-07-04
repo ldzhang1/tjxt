@@ -3,6 +3,8 @@
 1.main分支中主要是开发项目过程中遇到的bug以及解决办法
 2.主要代码在lesson-init分支
 
+#### 实现效果
+TODO
 #### 一、项目架构
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/e626e641-1aae-49fa-acd6-1cbfdb72ba43)
 
@@ -26,5 +28,3 @@
 - 学员的核心业务就是买课、学习，基本流程如下：
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/71f624da-d3eb-4fda-9ebb-4a002014da0f)
 
-#### 五、实现效果
-TODO
