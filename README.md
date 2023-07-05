@@ -6,11 +6,11 @@
 #### 实现效果
 - 学生端首页
   ![image](https://github.com/ldzhang1/tjxt/assets/104254485/6e27998f-e4ee-49ba-b2a9-7569dc0741dd)
-  - 课程播放等
+- 课程播放等
   ![image](https://github.com/ldzhang1/tjxt/assets/104254485/bea6787f-c559-4ab5-bb08-334bca225ca6)
 - 后台管理端
-  ![Uploading image.png…]()
-  
+  ![image](https://github.com/ldzhang1/tjxt/assets/104254485/73bf7b65-8045-4153-8cab-25cca366ba38)
+
 #### 一、项目架构
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/e626e641-1aae-49fa-acd6-1cbfdb72ba43)
 
