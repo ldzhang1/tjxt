@@ -31,6 +31,9 @@
 *error: RPC failed; HTTP 401 curl 22 The requested URL returned error: 401*
 *fatal: The remote end hung up unexpectedly*
 
-#### 解决办法
+#### 解决办法1
 
 ![image-20230704214646637](images/image-20230704214646637.png)
+
+#### 解决办法2：可能是idea里第一次输入账户密码错误，idea自动记住了错误密码（也可能是windows自动记住了密码），让其不自动记住密码即可
+![image-20230705233852578](images/image-20230705233852578.png)
