@@ -4,7 +4,14 @@
 2.主要代码在lesson-init分支
 
 #### 实现效果
-TODO
+- 学生端首页
+  - 购买课程
+  - 课程播放等
+  ![Uploading image.png…]()
+
+- 后台管理端
+  ![Uploading image.png…]()
+  
 #### 一、项目架构
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/e626e641-1aae-49fa-acd6-1cbfdb72ba43)
 
@@ -24,7 +31,7 @@ TODO
 - 课程管理：课程增删改查、课程上下架、课程审核、发布等等
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/df4df910-a517-44db-b55c-642d777c8c9a)
 
-##### 4.2 教师端的核心业务流程有
+##### 4.2 学生端的核心业务流程有
 - 学员的核心业务就是买课、学习，基本流程如下：
 ![image](https://github.com/ldzhang1/tjxt/assets/104254485/71f624da-d3eb-4fda-9ebb-4a002014da0f)
 
