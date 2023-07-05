@@ -8,12 +8,9 @@ import com.tianji.learning.domain.vo.LearningLessonVO;
 import com.tianji.learning.service.ILearningLessonService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -58,5 +55,19 @@ public class LearningLessonController {
     @GetMapping("/{courseId}")
     public LearningLessonVO queryLessonByCourseId(@PathVariable("courseId") Long courseId){
         return lessonService.queryLessonByCourseId(courseId);
+    }
+
+    @DeleteMapping("/{courseId}")
+    @ApiOperation("删除指定课程信息")
+    public void deleteCourseFromLesson(
+            @ApiParam(value = "课程id" ,example = "1") @PathVariable("courseId") Long courseId) {
+        lessonService.deleteCourseFromLesson(null, courseId);
+    }
+
+    @ApiOperation("统计课程学习人数")
+    @GetMapping("/{courseId}/count")
+    public Integer countLearningLessonByCourse(
+            @ApiParam(value = "课程id" ,example = "1") @PathVariable("courseId") Long courseId){
+        return lessonService.countLearningLessonByCourse(courseId);
     }
 }
