@@ -13,6 +13,9 @@ import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Slf4j
 @Component
 @RequiredArgsConstructor
@@ -26,13 +29,18 @@ public class LikedRecordListener {
             exchange = @Exchange(value = MqConstants.Exchange.LIKE_RECORD_EXCHANGE, type = ExchangeTypes.TOPIC),
             key =MqConstants.Key.QA_LIKED_TIMES_KEY
     ))
-    public void onMsg(LikedTimesDTO dto){
-        log.debug("LikeRecordListener 监听消息 {}", dto);
-        InteractionReply reply = replyService.getById(dto.getBizId());
-        if (reply == null){
-            return;
+    public void onMsg(List<LikedTimesDTO> list){
+        log.debug("LikeRecordListener 监听消息 {}", list);
+
+        // 消息转po
+        List<InteractionReply> replyList = new ArrayList<>();
+        for (LikedTimesDTO dto : list) {
+            InteractionReply reply = new InteractionReply();
+            reply.setId(dto.getBizId());
+            reply.setLikedTimes(dto.getLikedTimes());
+            replyList.add(reply);
         }
-        reply.setLikedTimes(dto.getLikedTimes());
-        replyService.updateById(reply);
+
+        replyService.updateBatchById(replyList);
     }
 }
