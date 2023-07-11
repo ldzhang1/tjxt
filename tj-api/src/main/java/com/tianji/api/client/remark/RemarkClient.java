@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import java.util.Set;
 
-@FeignClient(value = "learning-service",fallbackFactory = RemarkClientFallBack.class)
+@FeignClient(value = "remark-service",fallbackFactory = RemarkClientFallBack.class)
 public interface RemarkClient {
     @GetMapping("/likes/list")
     public Set<Long> getLikesStatusByBizIds(@RequestParam("bizIds") List<Long> bizIds);
