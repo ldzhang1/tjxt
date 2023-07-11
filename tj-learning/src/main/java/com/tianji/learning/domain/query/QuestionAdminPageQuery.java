@@ -1,4 +1,4 @@
-package com.tianji.learning.query;
+package com.tianji.learning.domain.query;
 
 import com.tianji.common.domain.query.PageQuery;
 import com.tianji.common.utils.DateUtils;
